@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  margin: 0;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 1;
+}
+
+main {
+  margin: 100px auto;
+  width: 1400px;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+.row + .row {
+  margin-top: 20px;
+}
+
+.introduction {
+  width: 120px;
+}
+
+/* Map */
+.map .us-path {
+  fill: #e9ecef;
+}
+
+.map .city-g {
+  cursor: pointer;
+}
+
+.map .city-ring-circle {
+  fill-opacity: 0;
+}
+
+.map .city-g.selected .city-ring-circle {
+  fill-opacity: 0.5;
+}
+
+/* Date brush */
+.date-brush .brush-g .overlay {
+  pointer-events: none;
+}
+
+.date-brush .axis {
+  font: inherit;
+  color: #adb5bd;
+  font-size: 12px;
+}
+
+/* Scatter */
+.scatters .city-name {
+  font-size: 16px;
+}
+
+.scatters .axis {
+  font: inherit;
+  color: #adb5bd;
+  font-size: 12px;
+}
+
+.scatters .circle {
+  stroke: #fff;
+  opacity: 0.5;
+}
+
+.scatters .active-circle {
+  stroke: #212529;
+  stroke-width: 2px;
+}
+
+/* Radial line */
+.radial-line .variable-name {
+  font-size: 16px;
+  color: #212529;
+}
+
+.radial-line .line-path {
+  stroke-width: 1.5px;
+}
+
+.radial-line .active-circle {
+  stroke: #212529;
+  stroke-width: 2px;
+}
+
+.radial-line .axis {
+  color: #adb5bd;
+  font-size: 12px;
+}
+
+/* Tooltip */
+.tooltip-container {
+  position: relative;
+}
+
+.tooltip {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #212529;
+  padding: 8px;
+  border-radius: 4px;
+  pointer-events: none;
+  display: none;
+  z-index: 1;
+}
+
+.tooltip.active {
+  display: block;
+}
+
+.tooltip .tooltip-value {
+  font-size: 16px;
+}
